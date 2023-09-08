@@ -14,7 +14,7 @@ public class Main {
    
     for(int cap:presentCapacities)
     {
-        float soh=(float)presentCapacities[i]/120*100;
+        float soh=(float)cap/120*100;
         if(soh>=80)
         {
             counts.healthy++;
