@@ -37,6 +37,9 @@ public class Main {
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
+    System.out.println("Healthy is="+counts.healthy);
+    System.out.println("exchange is="+counts.exchange);
+    System.out.println("counts.failed="+counts.failed);
     System.out.println("Done counting :)\n");
   }
 
