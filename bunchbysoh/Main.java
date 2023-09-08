@@ -11,15 +11,15 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
-    float soh =0;
+   
     for(int i=0;i<presentCapacities.length;i++)
     {
-        soh=100*presentCapacities[i]/120;
-        if(soh<=100 && soh>=80)
+        float soh=(float)presentCapacities[i]/120*100;
+        if(soh>=80)
         {
             counts.healthy++;
         }
-         else if(soh<80 && soh>=65)
+         else if(soh>=65)
         {
             counts.exchange++;
         }
@@ -39,10 +39,6 @@ public class Main {
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
-    System.out.println("Actual Healthy Count: " + counts.healthy);
-System.out.println("Actual Exchange Count: " + counts.exchange);
-System.out.println("Actual Failed Count: " + counts.failed);
-
     System.out.println("Done counting :)\n");
   }
 
