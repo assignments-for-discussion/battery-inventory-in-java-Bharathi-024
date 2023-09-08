@@ -1,7 +1,6 @@
-System.out.println("Actual Healthy Count: " + counts.healthy);
-System.out.println("Actual Exchange Count: " + counts.exchange);
-System.out.println("Actual Failed Count: " + counts.failed);
 package bunchbysoh;
+import java.lang.*;
+import static org.junit.Assert.assertTrue;
 
 public class Main {
   static class CountsBySoH {
