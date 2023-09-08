@@ -1,4 +1,6 @@
 package bunchbysoh;
+import java.lang.*;
+
 
 public class Main {
   static class CountsBySoH {
@@ -9,6 +11,24 @@ public class Main {
 
   static CountsBySoH countBatteriesByHealth(int[] presentCapacities) {
     CountsBySoH counts = new CountsBySoH();
+   
+    for(int cap:presentCapacities)
+    {
+        float soh=(float)cap/120*100;
+        if(soh>=80)
+        {
+            counts.healthy++;
+        }
+         else if(soh>=65)
+        {
+            counts.exchange++;
+        }
+         else
+        {
+            counts.failed++;
+        }
+        
+    }
     return counts;
   }
 
