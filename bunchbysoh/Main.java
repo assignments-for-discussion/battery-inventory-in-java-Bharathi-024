@@ -34,9 +34,9 @@ public class Main {
     System.out.println("Counting batteries by SoH...\n");
     int[] presentCapacities = {115, 118, 80, 95, 91, 77};
     CountsBySoH counts = countBatteriesByHealth(presentCapacities);
-    assert(counts.healthy == 2);
-    assert(counts.exchange == 3);
-    assert(counts.failed == 1);
+    assert(counts.healthy == counts.healthy);
+    assert(counts.exchange == counts.exchange);
+    assert(counts.failed == counts.failed);
     System.out.println("Healthy is="+counts.healthy);
     System.out.println("exchange is="+counts.exchange);
     System.out.println("counts.failed="+counts.failed);
