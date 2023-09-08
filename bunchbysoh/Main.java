@@ -1,3 +1,6 @@
+System.out.println("Actual Healthy Count: " + counts.healthy);
+System.out.println("Actual Exchange Count: " + counts.exchange);
+System.out.println("Actual Failed Count: " + counts.failed);
 package bunchbysoh;
 
 public class Main {
@@ -37,7 +40,10 @@ public class Main {
     assert(counts.healthy == 2);
     assert(counts.exchange == 3);
     assert(counts.failed == 1);
-    
+    System.out.println("Actual Healthy Count: " + counts.healthy);
+System.out.println("Actual Exchange Count: " + counts.exchange);
+System.out.println("Actual Failed Count: " + counts.failed);
+
     System.out.println("Done counting :)\n");
   }
 
